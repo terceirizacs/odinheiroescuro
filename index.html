@@ -348,6 +348,14 @@ footer strong{color:var(--text);font-weight:700}
   .mid-cta{padding:56px 22px}
   .fab{display:flex}
 }
+
+/* Mobile fix for client avatars */
+@media(max-width:600px){
+  .client-avatar{width:48px;height:48px;min-width:48px;min-height:48px}
+  .client-avatar img{width:48px;height:48px;min-width:48px;min-height:48px;border-radius:50%}
+  .client-card{flex-direction:row;align-items:center;gap:12px;padding:14px}
+  .clients-strip{grid-template-columns:1fr !important;gap:10px}
+}
 </style>
 </head>
 <body>
@@ -361,10 +369,10 @@ footer strong{color:var(--text);font-weight:700}
     <a href="#resultados">Resultados</a>
     <a href="#faq">FAQ</a>
   </div>
-  <a href="https://wa.me/5531991661010?text=Ol%C3%A1%21%20Quero%20falar%20com%20a%20Terceiriza%20CS." target="_top" class="nav-cta">Falar com a gente →</a>
+  <a href="https://wa.me/5531910666866?text=Ol%C3%A1%21%20Quero%20falar%20com%20a%20Terceiriza%20CS." target="_top" class="nav-cta">Falar com a gente →</a>
 </nav>
 
-<a href="https://wa.me/5531991661010?text=Ol%C3%A1%21%20Quero%20saber%20mais%20sobre%20a%20Terceiriza%20CS." target="_top" class="fab">
+<a href="https://wa.me/5531910666866?text=Ol%C3%A1%21%20Quero%20saber%20mais%20sobre%20a%20Terceiriza%20CS." target="_top" class="fab">
   <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12c0 1.77.46 3.44 1.27 4.89L2 22l5.25-1.37C8.63 21.5 10.27 22 12 22c5.52 0 10-4.48 10-10S17.52 2 12 2z"/></svg>
   WhatsApp
 </a>
@@ -376,7 +384,7 @@ footer strong{color:var(--text);font-weight:700}
     <h1 class="reveal">O dinheiro<br>que você <span class="strike">procura</span><br><em>já está</em> na<br>sua base.</h1>
     <p class="hero-sub reveal">Seu próximo faturamento não depende de <strong>novos alunos</strong>. Depende de <strong>acompanhar os que você já tem</strong> — e levá-los ao próximo nível.</p>
     <div class="hero-cta-row reveal">
-      <a href="https://wa.me/5531991661010?text=Ol%C3%A1%21%20Quero%20um%20diagn%C3%B3stico%20da%20minha%20base%20de%20alunos." target="_top" class="btn btn-primary">Quero um diagnóstico <span class="arrow">→</span></a>
+      <a href="https://wa.me/5531910666866?text=Ol%C3%A1%21%20Quero%20um%20diagn%C3%B3stico%20da%20minha%20base%20de%20alunos." target="_top" class="btn btn-primary">Quero um diagnóstico <span class="arrow">→</span></a>
       <a href="#como-funciona" class="btn btn-ghost">Como funciona</a>
     </div>
     <div class="hero-meta reveal">
@@ -509,7 +517,7 @@ footer strong{color:var(--text);font-weight:700}
   <div class="mid-cta reveal">
     <h3>Esses números podem ser os <em>seus</em>.</h3>
     <p>Qual seria o impacto no seu negócio se o reembolso caísse de 9% pra 3% e a recompra dobrasse?</p>
-    <a href="https://wa.me/5531991661010?text=Ol%C3%A1%21%20Quero%20resultados%20como%20esses%20na%20minha%20base." target="_top" class="btn btn-primary">Quero resultados como esses <span class="arrow">→</span></a>
+    <a href="https://wa.me/5531910666866?text=Ol%C3%A1%21%20Quero%20resultados%20como%20esses%20na%20minha%20base." target="_top" class="btn btn-primary">Quero resultados como esses <span class="arrow">→</span></a>
   </div>
 </section>
 
@@ -580,7 +588,7 @@ footer strong{color:var(--text);font-weight:700}
   <div class="mid-cta reveal">
     <h3>Se a dúvida for <em>"funciona pro meu nicho?"</em></h3>
     <p>Já operamos saúde, finanças, imóveis, concursos, beleza, psicanálise e muitos outros. Conta pra gente o seu.</p>
-    <a href="https://wa.me/5531991661010?text=Ol%C3%A1%21%20Meu%20nicho%20%C3%A9%20___%20e%20quero%20saber%20se%20funciona%20pra%20mim." target="_top" class="btn btn-primary">Quero conversar sobre o meu nicho <span class="arrow">→</span></a>
+    <a href="https://wa.me/5531910666866?text=Ol%C3%A1%21%20Meu%20nicho%20%C3%A9%20___%20e%20quero%20saber%20se%20funciona%20pra%20mim." target="_top" class="btn btn-primary">Quero conversar sobre o meu nicho <span class="arrow">→</span></a>
   </div>
 </section>
 
@@ -665,18 +673,7 @@ footer strong{color:var(--text);font-weight:700}
   </div>
 </section>
 
-<!-- FAQ -->
-<section class="faq" id="faq">
-  <div class="chip reveal">Objeções honestas</div>
-  <h2 class="section-title reveal">Perguntas que você<br><em>tá fazendo agora</em>.</h2>
-  <div class="faq-list">
-    <div class="faq-item reveal"><div class="faq-q"><span>Minha base ainda não é tão grande.</span><div class="ico"><svg width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M6 2v8M2 6h8"/></svg></div></div><div class="faq-a"><div class="faq-a-inner">Base pequena, bem cuidada, fatura mais que base grande abandonada. A operação é proporcional — começa enxuta e escala com você.</div></div></div>
-    <div class="faq-item reveal"><div class="faq-q"><span>Já tentei CS e não deu certo.</span><div class="ico"><svg width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M6 2v8M2 6h8"/></svg></div></div><div class="faq-a"><div class="faq-a-inner">Porque provavelmente era suporte com outro nome. CS de verdade é operação ativa — vai atrás de quem tá sumido antes do reembolso chegar.</div></div></div>
-    <div class="faq-item reveal"><div class="faq-q"><span>Quanto tempo pra ver resultado?</span><div class="ico"><svg width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M6 2v8M2 6h8"/></svg></div></div><div class="faq-a"><div class="faq-a-inner">Health Score e NPS em 30 dias. Impacto em reembolso/recompra em 60–90 dias. Escala sustentável a partir do mês 4.</div></div></div>
-    <div class="faq-item reveal"><div class="faq-q"><span>Vocês mexem no meu produto?</span><div class="ico"><svg width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M6 2v8M2 6h8"/></svg></div></div><div class="faq-a"><div class="faq-a-inner">Não. Seu produto é seu. A gente entrega dado e direção — você decide o que lançar e como ajustar.</div></div></div>
-    <div class="faq-item reveal"><div class="faq-q"><span>E se meu nicho for muito específico?</span><div class="ico"><svg width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M6 2v8M2 6h8"/></svg></div></div><div class="faq-a"><div class="faq-a-inner">Já operamos de saúde a concursos, de psicanálise a beleza. Estrutura é a mesma, execução é customizada.</div></div></div>
-  </div>
-</section>
+
 
 <!-- ABOUT -->
 <section class="about">
@@ -691,11 +688,24 @@ footer strong{color:var(--text);font-weight:700}
   </div>
 </section>
 
+<!-- FAQ -->
+<section class="faq" id="faq">
+  <div class="chip reveal">Tire suas dúvidas</div>
+  <h2 class="section-title reveal">Tudo que você precisa<br>saber <em>antes de decidir.</em></h2>
+  <div class="faq-list">
+    <div class="faq-item reveal"><div class="faq-q"><span>Já tenho uma pessoa de suporte. Não é a mesma coisa?</span><div class="ico"><svg width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2v8M2 6h8"/></svg></div></div><div class="faq-a"><div class="faq-a-inner">Não. Suporte é reativo — resolve problema quando o aluno reclama. CS é proativo — vai até o aluno antes do problema, acompanha o progresso e cria oportunidades de recompra. <strong>São operações completamente diferentes.</strong></div></div></div>
+    <div class="faq-item reveal"><div class="faq-q"><span>Meu produto é bom. Por que os alunos não terminam?</span><div class="ico"><svg width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2v8M2 6h8"/></svg></div></div><div class="faq-a"><div class="faq-a-inner">O problema quase nunca é a metodologia. É a falta de acompanhamento. <strong>87% dos alunos do mercado digital não terminam o curso</strong> — não porque o produto é ruim, mas porque ninguém os acompanhou no meio do caminho.</div></div></div>
+    <div class="faq-item reveal"><div class="faq-q"><span>Quanto custa contratar um time de CS internamente?</span><div class="ico"><svg width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2v8M2 6h8"/></svg></div></div><div class="faq-a"><div class="faq-a-inner">Para montar um time interno você precisaria de Head de Operação (R$ 8.000–R$ 12.000), Analista de CS (R$ 2.000–R$ 5.000), Analista de Dados (R$ 4.000–R$ 6.000), Especialista em Automação (R$ 5.000–R$ 8.000) e custo operacional (R$ 1.000–R$ 3.000). <strong>Total mínimo: R$ 20.000–R$ 34.000/mês. Com a Terceiriza CS, você terceiriza tudo isso com valores bem menores.</strong></div></div></div>
+    <div class="faq-item reveal"><div class="faq-q"><span>Em quanto tempo começo a ver resultados?</span><div class="ico"><svg width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2v8M2 6h8"/></svg></div></div><div class="faq-a"><div class="faq-a-inner">O primeiro mês é de implementação e diagnóstico. <strong>A partir do segundo mês já iniciamos as conversas com os alunos.</strong> Os primeiros resultados aparecem no terceiro e quarto mês, com validação completa em seis meses.</div></div></div>
+    <div class="faq-item reveal"><div class="faq-q"><span>Funciona para qualquer nicho?</span><div class="ico"><svg width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2v8M2 6h8"/></svg></div></div><div class="faq-a"><div class="faq-a-inner">Trabalhamos com creators que têm produtos entre R$97 e R$5.000 e faturam acima de R$100k. <strong>Já operamos em dezenas de nichos diferentes</strong> — saúde, finanças, marketing, fitness, desenvolvimento pessoal e muito mais.</div></div></div>
+  </div>
+</section>
+
 <!-- CTA FINAL -->
 <section class="cta-final">
   <h2 class="reveal">Pronto pra parar de depender<br><em>só do próximo lançamento?</em></h2>
   <p class="reveal">A Terceiriza CS é uma operação completa de acompanhamento do aluno — pronta pra rodar na sua operação.</p>
-  <a href="https://wa.me/5531991661010?text=Ol%C3%A1%21%20Quero%20uma%20opera%C3%A7%C3%A3o%20de%20CS%20para%20minha%20base%20de%20alunos.%20Faturo%20%2B100k." target="_top" class="btn btn-primary reveal" style="font-size:17px;padding:22px 36px">Falar com a Terceiriza CS <span class="arrow">→</span></a>
+  <a href="https://wa.me/5531910666866?text=Ol%C3%A1%21%20Quero%20uma%20opera%C3%A7%C3%A3o%20de%20CS%20para%20minha%20base%20de%20alunos.%20Faturo%20%2B100k." target="_top" class="btn btn-primary reveal" style="font-size:17px;padding:22px 36px">Falar com a Terceiriza CS <span class="arrow">→</span></a>
   <div class="qual reveal">Você fatura +100k com infoproduto? Vem conversar.</div>
 </section>
 
